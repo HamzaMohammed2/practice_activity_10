@@ -6,10 +6,7 @@ require.context('../stylesheets/', true, /\.(css|scss)$/i)
 //TODO - Your ES6 JavaScript code (if any) goes here
 import 'bootstrap'
 
-let initial_cards = 
-
-[
-
+let initial_cards = [
     {
         place: "Salt Lake City, Utah",
         description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas atque itaque quod facere vel nostrum, quae illo alias consequatur voluptatem. Laboriosam quod possimus nulla sequi dolorem expedita aut voluptatibus asperiores!",
@@ -22,8 +19,7 @@ let initial_cards =
 ]
 
 
-
-
+localStorage.setItem('card',JSON.stringify(initial_cards))
 function hideForm(){
   document.querySelector('#myForm').classList.add('d-none');
   document.querySelector('#cards').classList.remove('d-none');
